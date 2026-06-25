@@ -187,8 +187,8 @@ function openArticle(id){
     document.getElementById("modalDescription").textContent =
         row.description;
 
-    document.getElementById("articleText").textContent =
-        row.article;
+document.getElementById("articleText").innerHTML =
+    row.article;
 
     document.getElementById("modal").style.display = "block";
 }
